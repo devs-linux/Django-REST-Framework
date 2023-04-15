@@ -1,0 +1,15 @@
+# Ignore virtual environment files
+venv/
+
+# Ignore Django generated files
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+
+# Ignore other Django-specific files and folders
+*.log
+*.pot
+*.pyo
+*.swp
+local_settings.py
