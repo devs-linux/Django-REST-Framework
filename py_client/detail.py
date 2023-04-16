@@ -1,6 +1,10 @@
 import requests
+import sys
 
-endpoint = "http://localhost:8000/api/products/1/"
+args = sys.argv
+id = args[1] if len(args) > 1 else 1
+
+endpoint = f"http://localhost:8000/api/products/{id}/"
 
 response = requests.get(url=endpoint)
 
